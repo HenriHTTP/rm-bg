@@ -1,4 +1,5 @@
-from .commands  import remove_background
+from .commands import remove_background
+
 
 def process_commands(command):
     match command:

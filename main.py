@@ -12,12 +12,13 @@ def main():
     system = System()
     system.clear_screen()
     while True:
-          system.clear_screen()
-          console.print(logo)
-          command = input(">>> ").strip()
-          if not process_commands(command):
-              break
-          input("\nPress enter to continue.")
+        system.clear_screen()
+        console.print(logo)
+        command = input(">>> ").strip()
+        if not process_commands(command):
+            break
+        input("\nPress enter to continue.")
+
 
 if __name__ == "__main__":
     main()

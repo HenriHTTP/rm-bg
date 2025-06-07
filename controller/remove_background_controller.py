@@ -1,6 +1,7 @@
 from services.remove_background import RemoveBackgroundService
 import os
 
+
 class RemoveBackgroundController:
     def __init__(self, image_path: str):
         self.image_path = os.path.abspath(image_path)
@@ -11,8 +12,7 @@ class RemoveBackgroundController:
         output_image_path = os.path.join(image_dir, output_image_name)
 
         self.service = RemoveBackgroundService(
-            image_path=self.image_path,
-            output_image_path=output_image_path
+            image_path=self.image_path, output_image_path=output_image_path
         )
 
     def execute(self):
